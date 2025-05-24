@@ -1,2 +1,17 @@
-# Pupstagram
-Pupstagram is all about celebrating the charm, chaos, and cuteness of dogs. Scroll through a feed full of furry faces, give some love with a like, and enjoy the endless joy that only pups can bring.
+# Pupstagram 🐾
+
+Pupstagram is a fun and playful web project inspired by Instagram — but for dogs! 🐶  
+Scroll through a cute feed of pup posts, like your favorites, and enjoy the wag-worthy vibes.
+
+## Features
+- Like button interaction
+- Clean, minimal layout with two posts side by side
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+
+
+Made with ❤️ for pup lovers everywhere.
+
