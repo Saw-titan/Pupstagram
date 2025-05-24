@@ -15,3 +15,4 @@ Scroll through a cute feed of pup posts, like your favorites, and enjoy the wag-
 
 Made with ❤️ for pup lovers everywhere.
 
+LIVE : https://app.netlify.com/projects/pupstagram-121/configuration/general
