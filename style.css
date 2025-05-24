@@ -1,10 +1,7 @@
 body{
     background-color: rgb(26, 25, 25);
     color: white;
-}
-
-h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar{
@@ -19,24 +16,48 @@ h1{
 
 .pup{
     display: flex;
-    justify-content: space-around;
+    gap: 120px;
+    padding: 0 170px;
 
 }
 
+.user {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 6px;
+}
+
+.insta-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  margin-right: 6px;
+  vertical-align: middle;
+  border-radius: 4px; /* optional: makes it softer */
+}
+
 .pup img{
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     padding-top: 40px;
 }
 
 .like-btn {
   background: none;
   border: none;
-  color: #ed4956;
-  font-size: 16px;
+  color: white;
+  font-size: 20px;
+  font-size: 40px;
   cursor: pointer;
   padding-top: 10px;
+  transition: transform 0.1s ease;
 }
+
+.like-btn.liked {
+  color: #ed4956;
+}
+
 
 .post{
     padding: 20px;

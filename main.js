@@ -1,8 +1,10 @@
 document.querySelectorAll('.like-btn').forEach(button => {
   button.addEventListener('click', () => {
-    button.textContent = button.textContent === '❤️ Like' ? '💔 Unlike' : '❤️ Like';
+    button.classList.toggle('liked');
+    button.textContent = button.classList.contains('liked') ? '❤️' : '♡';
   });
 });
+
 
 document.getElementById('menu-toggle').addEventListener('click', function () {
   const menu = document.getElementById('mobile-menu');
