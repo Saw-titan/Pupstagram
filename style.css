@@ -43,28 +43,100 @@ body{
     padding-top: 40px;
 }
 
-.like-btn {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 20px;
-  font-size: 40px;
-  cursor: pointer;
-  padding-top: 10px;
-  transition: transform 0.1s ease;
+.heart-container {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.like-btn.liked {
-  color: #ed4956;
+.grey-heart{
+  background-color: #ccc;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.grey-heart:before,
+.grey-heart:after{
+  content: "";
+  background: #ccc;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+}
+
+.grey-heart:before{
+  top: -10px;
+  left: 0;
+}
+
+.grey-heart:after{
+  left: 10px;
+  top: 0;
+}
+
+.red-heart{
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+  visibility: hidden;
+}
+
+.red-heart:before,
+.red-heart:after{
+  content: "";
+  background: red;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+}
+
+.red-heart:before{
+  top: -10px;
+  left: 0;
+}
+
+.red-heart:after{
+  left: 10px;
+  top: 0;
+}
+
+.red-heart.animation{
+  animation: pop 0.9s linear;
+  visibility: visible;
+}
+
+.red-heart.fill-color{
+  background: red;
+}
+
+@keyframes pop {
+  100% {
+    transform: scale(1.7) rotate(-45deg);
+    opacity: 0;
+  }
 }
 
 
 .post{
-    padding: 20px;
-    padding-top: 0px;
-    background-color: rgb(43, 42, 42);
-    border-radius: 15px;
-    margin: 15px;
+  padding: 20px;
+  padding-top: 0px;
+  background-color: rgb(43, 42, 42);
+  border-radius: 15px;
+  margin: 15px;
 }
 .menu-icon {
   font-size: 24px;

@@ -1,7 +1,18 @@
-document.querySelectorAll('.like-btn').forEach(button => {
-  button.addEventListener('click', () => {
-    button.classList.toggle('liked');
-    button.textContent = button.classList.contains('liked') ? '❤️' : '♡';
+document.querySelectorAll('.post').forEach(post => {
+  const greyHeart = post.querySelector('.grey-heart');
+  const redHeart = post.querySelector('.red-heart');
+
+  greyHeart.addEventListener('click', () => {
+    redHeart.classList.add('animation');
+    redHeart.style.visibility = 'visible';
+    setTimeout(() => {
+      redHeart.classList.remove('animation');
+    }, 900);
+  });
+
+  redHeart.addEventListener('click', () => {
+    redHeart.classList.remove('animation');
+    redHeart.style.visibility = 'hidden';
   });
 });
 
