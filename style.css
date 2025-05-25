@@ -14,12 +14,14 @@ body{
     margin-top: 10px;
 }
 
-.pup{
-    display: flex;
+.pup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    justify-content: center;
     gap: 120px;
-    padding: 0 170px;
-
+    padding: 0 200px;
 }
+
 
 .user {
   display: flex;
